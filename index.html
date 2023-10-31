@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+  <!--PRUEBA IMPLEMENTACION DE MESSENGER -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo de webmessaging con Genesys Cloud version 1.0 - minsait</title>
+
+<script type="text/javascript" charset="utf-8">
+  (function (g, e, n, es, ys) {
+    g['_genesysJs'] = e;
+    g[e] = g[e] || function () {
+      (g[e].q = g[e].q || []).push(arguments)
+    };
+    g[e].t = 1 * new Date();
+    g[e].c = es;
+    ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+  })(window, 'Genesys', 'https://apps.mypurecloud.ie/genesys-bootstrap/genesys.min.js', {
+    environment: 'prod-euw1',
+    deploymentId: 'a9d1b481-c93d-458d-9921-1ec5a9e64a00'
+  });
+</script>
+
+  <body>
+    <form id="chatForm">
+        <h3>Información de cliente</h3>
+
+        <table class="webchat-config">
+            <tbody>
+                <tr>
+                    <th>Nombre:</th>
+                    <td><input type="text" id="first-name" value="Claudia" /></td>
+                </tr>
+                <tr>
+                    <th>Apellidos:</th>
+                    <td><input type="text" id="last-name" value="Fernandez Estebaranz" /></td>
+                </tr>
+                <tr>
+                    <th>Correo-e:</th>
+                    <td><input type="text" id="correo-e" value="cfernandeze@minsait.com" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" id="chat-button">Iniciar Chat</button>
+    </form>
+    <div id="chat-container" style="height:600px"></div>
+	
+</body>
+</html>
