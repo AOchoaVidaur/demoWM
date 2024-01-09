@@ -34,6 +34,22 @@
     <!-- TrueEngage -->
     <script async src="https://asset.trueengage.com/accounts/43bc9234-0319-4856-97a9-699c7c458c28/widget.js"></script>
 
+<!-- PRUEBA de implementacion de webmessaging (lab minsait) -->
+<script type="text/javascript" charset="utf-8">
+  (function (g, e, n, es, ys) {
+    g['_genesysJs'] = e;
+    g[e] = g[e] || function () {
+      (g[e].q = g[e].q || []).push(arguments)
+    };
+    g[e].t = 1 * new Date();
+    g[e].c = es;
+    ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+  })(window, 'Genesys', 'https://apps.mypurecloud.ie/genesys-bootstrap/genesys.min.js', {
+    environment: 'prod-euw1',
+    deploymentId: '32423072-dbe4-4eeb-9971-db3d7dfae0fe'
+  });
+</script>	
+	
   <body>
     <form id="chatForm">
         <h3>Información de cliente</h3>
