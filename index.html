@@ -26,11 +26,13 @@
     deploymentId: '32423072-dbe4-4eeb-9971-db3d7dfae0fe'
   });
 
+  var firstName = document.getElementById('first-name').value;
+	
   Genesys("command", "Database.set", {
 	  messaging: {
 		customAttributes: {
 			websiteOrigin: 'aochoavidaur.github.io/demoWM/',
-			customerName: 'Alberto',
+			customerName: firstName,
 		}
 	  }	
   });	
