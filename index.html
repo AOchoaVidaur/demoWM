@@ -37,19 +37,7 @@
     <script async src="https://asset.trueengage.com/accounts/43bc9234-0319-4856-97a9-699c7c458c28/widget.js"></script>
 
 <!-- PRUEBA de implementacion de webmessaging (lab minsait) deploymentId: '32423072-dbe4-4eeb-9971-db3d7dfae0fe' -->
-<script type="text/javascript" charset="utf-8">
-
-  var firstName = document.getElementById('first-name').value;
-	
-  Genesys("command", "Database.set", {
-	  messaging: {
-		customAttributes: {
-			websiteOrigin: 'aochoavidaur.github.io/demoWM/',
-			customerName: firstName,
-		}
-	  }	
-  });
-	
+<script type="text/javascript" charset="utf-8">	
   (function (g, e, n, es, ys) {
     g['_genesysJs'] = e;
     g[e] = g[e] || function () {
@@ -62,6 +50,18 @@
     environment: 'euw1',
     deploymentId: '32423072-dbe4-4eeb-9971-db3d7dfae0fe'
   });	
+
+  var firstName = document.getElementById('first-name').value;
+	
+  Genesys("command", "Database.set", {
+	  messaging: {
+		customAttributes: {
+			websiteOrigin: 'aochoavidaur.github.io/demoWM/',
+			customerName: firstName,
+		}
+	  }	
+  });
+	
 </script>	
 
 <!-- PRUEBA de implementacion de webmessaging (NN) -->
