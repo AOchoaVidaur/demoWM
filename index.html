@@ -34,13 +34,25 @@
 	
     <!-- PRUEBA de implementacion de Webcallback -->
     <!-- TrueEngage -->
+    <!--
     <script async src="https://asset.trueengage.com/accounts/43bc9234-0319-4856-97a9-699c7c458c28/widget.js"></script>
+    -->
 
 
 <script>
 	function clickInitChat(){
 		var firstName = document.getElementById('first-name').value;
 		alert(firstName);
+
+		  var firstName = document.getElementById('first-name').value;	
+		  Genesys("command", "Database.set", {
+			  messaging: {
+				customAttributes: {
+					websiteOrigin: 'aochoavidaur.github.io/demoWM/',
+					customerName: firstName,
+				}
+			  }	
+		  }		
 	}
 </script>
 
