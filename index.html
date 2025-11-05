@@ -66,11 +66,13 @@
   });	
 
   var firstName = document.getElementById('first-name').value;	
+  var correoE = document.getElementById('correo-e').value;	
   Genesys("command", "Database.set", {
 	  messaging: {
 		customAttributes: {
 			websiteOrigin: 'aochoavidaur.github.io/demoWM/',
 			customerName: firstName,
+			customerEmail: correoE,
 		}
 	  }	
   });
